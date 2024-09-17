@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body .row:nth-child(odd) .cell:nth-child(odd),
+body .row:nth-child(even) .cell:nth-child(even) {
+    background: black;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black; 
+    background: red;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: row; */
+}
